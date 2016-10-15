@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Douban Movie Enhancement",
+    "version": "0.0.1",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://movie.douban.com/*"
+            ],
+            "run_at": "document_end",
+            "js": [
+                "jquery.js",
+                "index.js",
+                "base64.js"
+            ]
+        }
+    ],
+    "permissions": [
+      "tabs",
+      "https://*.douban.com/*",
+      "http://*.douban.com/*"
+    ]
+}
